@@ -1,5 +1,7 @@
 // import React from 'react';
 import { Heart, MessageCircle, Instagram, Mail, Phone, MapPin } from 'lucide-react';
+import logo from "../assets/logo.jpg";
+import heart from "../assets/heart.png";
 
 const Footer = () => {
   return (
@@ -9,11 +11,16 @@ const Footer = () => {
           {/* Brand and Mission */}
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              <Heart className="h-8 w-8 text-emerald-400" />
-              <span className="text-xl font-bold">FertilityJourney</span>
+              {/*<Heart className="h-8 w-8 text-emerald-400"/>*/}
+              <img
+                  src={heart}
+                  alt="Precious Conceptions Logo"
+                  className="w-10 h-10 object-contain"
+              />
+              <span className="text-xl font-bold">Precious Conceptions</span>
             </div>
             <p className="text-gray-300 mb-6 leading-relaxed">
-              Supporting Nigerian families on their journey to parenthood through holistic, 
+              Supporting Nigerian families on their journey to parenthood through holistic,
               personalized fertility guidance and emotional support. Every journey is unique, 
               and every dream matters.
             </p>
@@ -54,12 +61,13 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
             <div className="space-y-3">
               <div className="flex items-center space-x-2">
-                <Phone className="h-4 w-4 text-emerald-400" />
-                <span className="text-gray-300">+234 800 000 0000</span>
+                <Phone className="h-4 w-4 text-emerald-400"/>
+                <span className="text-gray-300">(+234) 7088080339</span>
+                {/*<span className="text-gray-300">(+234) 7088080339</span>*/}
               </div>
               <div className="flex items-center space-x-2">
-                <Mail className="h-4 w-4 text-emerald-400" />
-                <span className="text-gray-300">hello@fertilityjourney.ng</span>
+              <Mail className="h-4 w-4 text-emerald-400" />
+                <span className="text-gray-300">info@preciousconceptionscom</span>
               </div>
               <div className="flex items-center space-x-2">
                 <MapPin className="h-4 w-4 text-emerald-400" />
@@ -92,7 +100,7 @@ const Footer = () => {
         {/* Copyright */}
         <div className="border-t border-gray-700 mt-8 pt-8 text-center">
           <p className="text-gray-400">
-            © 2024 FertilityJourney. All rights reserved. Made with ❤️ for families in Nigeria.
+            © 2024 Precious Conceptions limited. All rights reserved. Made with <i className="fa-solid fa-heart"></i> for families in Nigeria.
           </p>
         </div>
       </div>
