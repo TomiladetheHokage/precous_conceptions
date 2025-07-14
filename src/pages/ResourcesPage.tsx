@@ -1,9 +1,10 @@
 // import React, { useState } from 'react';
-import { BookOpen, Headphones, Users, FileText, Search, Clock, ArrowRight } from 'lucide-react';
+import { BookOpen, Headphones, Users, FileText, Search, Clock, ArrowRight, PlayCircle } from 'lucide-react';
 import {useState} from "react";
 
 const ResourcesPage = () => {
   const [activeTab, setActiveTab] = useState('blog');
+  const [playingVideo, setPlayingVideo] = useState<string | null>(null);
 
   const blogPosts = [
     {
@@ -115,11 +116,33 @@ const ResourcesPage = () => {
     }
   ];
 
+  const videos = [
+    {
+      title: 'Understanding IVF: Step by Step',
+      description: 'A visual guide to the IVF process, from consultation to embryo transfer.',
+      thumbnail: 'https://img.youtube.com/vi/5bYF2U4L2r8/hqdefault.jpg',
+      videoUrl: 'https://www.youtube.com/embed/5bYF2U4L2r8'
+    },
+    {
+      title: 'Fertility Nutrition Tips',
+      description: 'Learn about the best foods and supplements to support your fertility journey.',
+      thumbnail: 'https://img.youtube.com/vi/8d7pTzqQ0bA/hqdefault.jpg',
+      videoUrl: 'https://www.youtube.com/embed/8d7pTzqQ0bA'
+    },
+    {
+      title: 'Coping with Infertility Emotionally',
+      description: 'Expert advice on managing the emotional challenges of infertility.',
+      thumbnail: 'https://img.youtube.com/vi/3GwjfUFyY6M/hqdefault.jpg',
+      videoUrl: 'https://www.youtube.com/embed/3GwjfUFyY6M'
+    }
+  ];
+
   const tabs = [
     { id: 'blog', label: 'Blog', icon: FileText },
     { id: 'podcasts', label: 'Podcasts', icon: Headphones },
-    { id: 'bookclub', label: 'Book Club', icon: BookOpen },
-    { id: 'resources', label: 'Downloads', icon: Users }
+    { id: 'videos', label: 'Videos', icon: PlayCircle },
+    // { id: 'bookclub', label: 'Book Club', icon: BookOpen },
+    // { id: 'resources', label: 'Downloads', icon: Users }
   ];
 
   return (
@@ -305,6 +328,66 @@ const ResourcesPage = () => {
                   </div>
                 ))}
               </div>
+            </div>
+          )}
+
+          {/* Videos */}
+          {activeTab === 'videos' && (
+            <div>
+              <div className="flex justify-between items-center mb-8">
+                <h2 className="text-2xl font-bold text-gray-900">Fertility Videos</h2>
+                <button className="text-emerald-600 hover:text-emerald-700 font-medium">
+                  Subscribe
+                </button>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {videos.map((video, index) => (
+                  <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-200 flex flex-col">
+                    <div className="relative">
+                      <img
+                        src={video.thumbnail}
+                        alt={video.title}
+                        className="w-full h-48 object-cover"
+                      />
+                      <button
+                        className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 hover:bg-opacity-60 transition-colors duration-200"
+                        onClick={() => setPlayingVideo(video.videoUrl)}
+                        aria-label={`Play ${video.title}`}
+                      >
+                        <PlayCircle className="h-16 w-16 text-white opacity-90" />
+                      </button>
+                    </div>
+                    <div className="p-6 flex-1 flex flex-col">
+                      <h3 className="text-lg font-semibold text-gray-900 mb-2">{video.title}</h3>
+                      <p className="text-gray-600 mb-4 flex-1">{video.description}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+              {/* Video Modal */}
+              {playingVideo && (
+                <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70">
+                  <div className="bg-white rounded-lg shadow-lg p-4 max-w-2xl w-full relative">
+                    <button
+                      className="absolute top-2 right-2 text-gray-600 hover:text-gray-900 text-2xl"
+                      onClick={() => setPlayingVideo(null)}
+                      aria-label="Close video"
+                    >
+                      &times;
+                    </button>
+                    <div className="aspect-w-16 aspect-h-9 w-full">
+                      <iframe
+                        src={playingVideo}
+                        title="Fertility Video"
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                        className="w-full h-96 rounded-lg"
+                      ></iframe>
+                    </div>
+                  </div>
+                </div>
+              )}
             </div>
           )}
         </div>

@@ -16,6 +16,10 @@ import ResourcesPage from './pages/ResourcesPage';
 import BookingPage from './pages/BookingPage';
 import StorePage from './pages/StorePage';
 import ContactPage from './pages/ContactPage';
+import EggDonorProgramPage from './pages/EggDonorProgramPage';
+import SurrogacyProgramPage from './pages/SurrogacyProgramPage';
+import BecomeDonorSurrogatePage from './pages/BecomeDonorSurrogatePage';
+import ConceptionBootcampPage from './pages/ConceptionBootcampPage';
 
 function App() {
   return (
@@ -32,6 +36,10 @@ function App() {
             <Route path="/booking" element={<BookingPage />} />
             <Route path="/store" element={<StorePage />} />
             <Route path="/contact" element={<ContactPage />} />
+            <Route path="/egg-donor-program" element={<EggDonorProgramPage />} />
+            <Route path="/surrogacy-program" element={<SurrogacyProgramPage />} />
+            <Route path="/become-donor-surrogate" element={<BecomeDonorSurrogatePage />} />
+            <Route path="/conception-bootcamp" element={<ConceptionBootcampPage />} />
           </Routes>
         </main>
         <Footer />

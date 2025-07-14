@@ -1,61 +1,160 @@
 // import React from 'react';
 import { Star, Heart, Quote } from 'lucide-react';
+import Ayobami from '../assets/Ayobami-Adebo.png';
+import Dr_shitu from '../assets/Dr.-Shittu.jpg';
+import Esosa from '../assets/Esosa-Longe.jpg';
+import Kemi from '../assets/Kemi-Shonubi.png';
+import Olaedo from '../assets/Olaedo-Emelie.png';
+import Omotola from '../assets/Omotola-Badamasi.png';
+import Otuke from '../assets/Otuke.jpg';
+import Rasheeda from '../assets/Rasheeda-Ninalowo.png';
+import Rev from '../assets/Rev.-Mrs-Henry-Adelegan.png';
+import Stephanie from '../assets/Stephanie-Obi.jpg';
+import Uwanma from '../assets/Uwanma-Odefa.png';
+
+
 
 const TestimonialsPage = () => {
   const testimonials = [
     {
-      name: 'Adunni & Tunde Okafor',
+      name: 'Stephanie Obi',
       location: 'Lagos',
-      story: 'After 3 years of trying to conceive, we had almost given up hope. Dr. Adaora\'s holistic approach not only helped us understand our fertility better but also provided the emotional support we desperately needed. Today, we are proud parents of twins!',
-      service: 'IVF Navigation & Support',
+      story: 'Your story can impact the world but you have to package it into a product that can scale. ' +
+          'Super proud of CLD Tribe member Toyin Lolu-Ogunmade who was medically certified not to be able to conceive. ' +
+          'Today, she has twins. She has created an online course about her solution and also has written Mom At Last. ' +
+          'I cant imagine the impact her products will have in the lives of other people.' +
+          ' I just want to celebrate Toyin for allowing herself to be used by God. Congratulations Toyin. ' +
+          'I pray that this book will reach the ends of the Earth and will impact the people that will need it.',
+      service: 'Online course launch Strategist that helps women create and sell premium courses. She is also founder, TrainQuarters.',
       duration: '8 months',
       rating: 5,
-      image: 'https://images.pexels.com/photos/1648371/pexels-photo-1648371.jpeg?auto=compress&cs=tinysrgb&w=400'
+      image: Stephanie
     },
     {
-      name: 'Blessing Adebayo',
+      name: 'Kemi  Shonubi',
       location: 'Abuja',
-      story: 'As a single woman pursuing motherhood, I felt overwhelmed by the process. The team provided not just medical guidance but also helped me navigate the emotional and cultural challenges. My daughter is now 6 months old, and I couldn\'t be happier.',
-      service: 'Fertility Assessment & IVF Support',
+      story: 'Dearest Toyin, I promised that I will pen down my thoughts once ' +
+          'I read the last page of your book *Mom at Last*....just closed the book. Where do I start from? Thank you for the gift of your story.' +
+          ' Thank you for sharing your innermost feelings, experiences, pain & joy with the world. *Haaaaaaaaa*...... *hmmmm* ' +
+          'I honestly am at a loss for words. You indeed are an awesome woman and I marvel at your strength & total trust in God who is the Author of life.' +
+          ' Felt like I was actually in the story with you as each page was filled with detail & skilled narration. Thank you & God Bless.' +
+          ' Everyone needs to grab a copy or more .It is a book for everyone: single, married, parents, yet to conceive, ' +
+          '*EVERYONE* There are nuggets buried in each chapter that will definitely touch you. Well done to a wonderful sister',
+      service: 'HR Expert and Story Teller',
       duration: '12 months',
       rating: 5,
-      image: 'https://images.pexels.com/photos/3992656/pexels-photo-3992656.jpeg?auto=compress&cs=tinysrgb&w=400'
+      image: Kemi
     },
     {
-      name: 'Chioma & David Nwosu',
+      name: 'Esosa Longe',
       location: 'Port Harcourt',
-      story: 'After two miscarriages, we were scared to try again. The pregnancy support program gave us the confidence and knowledge we needed. Our rainbow baby arrived healthy and strong. We are forever grateful.',
-      service: 'Pregnancy Support',
+      story: 'Over the years with my work with couples battling infertility, I have been in search of a complete story. ' +
+          'A complete story here meaning an account of the entire journey through infertility to fertility properly documented. ' +
+          'When I ordered the book \'MOM AT LAST\', I was eager to read Toyin\'s account. Her complete documentation of her journey exceeded my expectation. ' +
+          'I have read success stories of other women as chapters in other books but I have never read a complete account jointly written by a couple. ' +
+          'This entire journey through options that led Toyin and her husband to surrogacy in this book should be read by many. ' +
+          'Toyin is real in this book and I know this is a liberation for many couples looking to options to begin or complete their families.' +
+          ' I bought the book initially to read and give away but I soon realized after reading that it is a book to be kept, ' +
+          'so I\'ll order another copy for a giveaway. Thank you Toyin for documenting and preserving your story.',
+      service: 'Founder & Convener Fertility in Infertility',
       duration: '10 months',
       rating: 5,
-      image: 'https://images.pexels.com/photos/1648776/pexels-photo-1648776.jpeg?auto=compress&cs=tinysrgb&w=400'
+      image: Esosa
     },
     {
       name: 'Fatima & Ahmed Hassan',
       location: 'Kano',
-      story: 'Finding culturally sensitive fertility support was challenging until we found FertilityJourney. They understood our cultural and religious needs while providing modern medical guidance. Our son is now 2 years old.',
-      service: 'Fertility Optimization',
+      story: 'It is a very emotional story, so explicitly written, the pictures come alive like a movie when reading the book. ' +
+          'Toyin described her experience with so much detail, she didn\'t leave any gaps. After reading, ' +
+          'I learnt a lot about some challenges people go through when trying for a baby, including new medical terminology. ' +
+          'The best part of the book was the arrival of the twins.' +
+          ' I felt so happy and excited that persistence and commitment from Toyin and Lolu paid off.',
+      service: '',
       duration: '6 months',
       rating: 5,
-      image: 'https://images.pexels.com/photos/1674666/pexels-photo-1674666.jpeg?auto=compress&cs=tinysrgb&w=400'
+      image: Otuke
     },
     {
-      name: 'Grace Ogbonna',
-      location: 'Enugu',
-      story: 'At 38, I thought time was running out. The personalized fertility plan helped optimize my health and timing. I conceived naturally within 4 months of starting the program. Sometimes miracles do happen!',
+      name: 'Rev. & Mrs Henry Adelegan\n',
+      location: 'Lagos',
+      story: 'Toyin is very courageous to have shared these deep personal details about a very private part of her life.' +
+          ' I don\'t think I have such guts. She is very tenacious and focused in her drive to achieve the goal of being a mother. ' +
+          'I think this travail took her walk with God to a height she would not have otherwise easily attained, and ' +
+          'she would be a source of strength to all women who want to go through this route to being mothers.' +
+          ' I think she could reach millions of women for Christ through this ordeal she went through, confirming God has always been ' +
+          'faithful and true to His words to save, deliver and set free.',
       service: 'Natural Fertility Support',
       duration: '4 months',
       rating: 5,
-      image: 'https://images.pexels.com/photos/3992267/pexels-photo-3992267.jpeg?auto=compress&cs=tinysrgb&w=400'
+      image: Rev
     },
     {
-      name: 'Kemi & Femi Johnson',
+      name: 'Omotola Badamasi',
       location: 'Ibadan',
-      story: 'After 5 failed IVF cycles elsewhere, we were emotionally and financially drained. The comprehensive support here helped us choose the right clinic and approach. Our miracle baby arrived on our 6th attempt.',
-      service: 'IVF Navigation & Emotional Support',
+      story: 'Oh my God! I read MOM AT LAST over 10 times (TEN TIMES) and each time , it is like I am picking a new book to read. ' +
+          'This book is so phenomenal. I was able to picture and feel what couples battling with conceptions issues are facing and ' +
+          'that has thought me to be more compassionate towards them and to reach out to them to help them in any way I can. ' +
+          'Toyin is an extremely strong woman, not giving up after several surgeries. That completely blew my mind. I must say,' +
+          ' this book is a must read for every one',
+      service: '',
       duration: '14 months',
       rating: 5,
-      image: 'https://images.pexels.com/photos/1648375/pexels-photo-1648375.jpeg?auto=compress&cs=tinysrgb&w=400'
+      image: Omotola
+    },
+    {
+      name: 'Dr. Shittu',
+      location: 'Ibadan',
+      story: '\n' +
+          'Truly amazing book, provides an honest look and captures the emotional journey of infertility and ' +
+          'IVF as well as Surrogacy from the perspective of someone who has actually gone through those emotions',
+      service: 'Fertility Specialist, Bloom Fertility Clinic Nigeria',
+      duration: '14 months',
+      rating: 5,
+      image: Dr_shitu
+    },
+    {
+      name: 'Uwanma Odefa',
+      location: 'Ibadan',
+      story: 'My friend Toyin Lolu-Ogunmade wrote this book from the deepest recesses of her soul inspired by God and her journey to become a mother. ' +
+          'I have read it and I can tell you for free it will shift your thinking. If you or anyone you know is trying to conceive, get this book!' +
+          ' Delivery nationwide.',
+      service: '(The Inspired) - Author, Creative Writer',
+      duration: '14 months',
+      rating: 5,
+      image: Uwanma
+    },
+    {
+      name: 'Rasheeda Ninalowo',
+      location: 'Lagos, Nigeria',
+      story: 'This was a very emotional book for me as I know the author personally. ' +
+          'A must read for every woman as those who can have children without much help ' +
+          'will remain ever grateful to God for their blessings while those who have challenges with child birth ' +
+          'will never give up hope. God bless Toyin for having the courage to share her very deep and emotional ' +
+          'story and God bless her beautiful twins!',
+      service: '(The Inspired) - Author, Creative Writer',
+      duration: '14 months',
+      rating: 5,
+      image: Rasheeda
+    },
+    {
+      name: 'Ayobami Adebo',
+      location: 'Lagos, Nigeria',
+      story: 'If there is a 100 Star review, I will gladly give "MOM AT LAST" It is a must have for all GOING/TRYING TO CONCEIVE MUMS.' +
+          ' This Book is an assurance that whatever you are going to, you are not alone in this journey and you will have your bundle of joy soonest',
+      service: '',
+      duration: '14 months',
+      rating: 5,
+      image: Ayobami
+    },
+    {
+      name: 'Olaedo Emelie',
+      location: 'Lagos, Nigeria',
+      story: 'All I can say is thank you for pouring out your experience and knowledge without holding back a thing. ' +
+          'I had to read more than once to digest all the information from it. This is a must read.',
+      service: 'Founder, Tales of Trying to Conceive',
+      duration: '14 months',
+      rating: 5,
+      image: Olaedo
     }
   ];
 
@@ -110,7 +209,7 @@ const TestimonialsPage = () => {
                   <img
                     src={testimonial.image}
                     alt={testimonial.name}
-                    className="rounded-lg shadow-lg w-full h-64 object-cover"
+                    className="rounded-lg shadow-lg w-80 h-96 object-cover mx-auto"
                   />
                 </div>
                 
@@ -118,11 +217,11 @@ const TestimonialsPage = () => {
                   <div className="bg-white p-8 rounded-lg shadow-md">
                     <Quote className="h-8 w-8 text-emerald-600 mb-4" />
                     
-                    <div className="flex items-center mb-4">
-                      {[...Array(testimonial.rating)].map((_, i) => (
-                        <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
-                      ))}
-                    </div>
+                    {/*<div className="flex items-center mb-4">*/}
+                    {/*  {[...Array(testimonial.rating)].map((_, i) => (*/}
+                    {/*    <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />*/}
+                    {/*  ))}*/}
+                    {/*</div>*/}
                     
                     <p className="text-gray-700 text-lg mb-6 leading-relaxed italic">
                       "{testimonial.story}"

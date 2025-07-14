@@ -5,89 +5,100 @@ import { Link } from 'react-router-dom';
 const ServicesPage = () => {
   const services = [
     {
-      icon: Heart,
-      title: 'Fertility Assessment & Optimization',
-      description: 'Comprehensive evaluation of your fertility health with personalized recommendations for natural conception.',
-      features: [
-        'Fertility health assessment',
-        'Lifestyle optimization guidance',
-        'Nutritional counseling',
-        'Supplement recommendations',
-        'Cycle tracking support'
-      ],
-      duration: '2-3 months',
-      price: 'From ₦50,000'
-    },
-    {
       icon: Users,
-      title: 'IVF Navigation & Support',
-      description: 'Expert guidance through the IVF process, from clinic selection to emotional support throughout treatment.',
+      title: 'Counselling Services',
+      description: 'Not sure what to do, which treatment plan you should choose or where to start from? Book a session with us for advise, guide and clarity.',
       features: [
-        'Clinic evaluation and selection',
-        'Treatment protocol guidance',
-        'Emotional support sessions',
-        'Partner counseling',
-        'Post-treatment care'
+        'Fertility Advisory',
+        'Family Planning',
+        'Fertility preservation',
+        'Legal Advisory',
+        'Surrogacy Advisory',
+        'Implications & Trauma Counselling',
+        'Managing Emotions',
+        'Financial Planning'
       ],
       duration: '6-12 months',
       price: 'From ₦100,000'
     },
     {
       icon: Baby,
-      title: 'Surrogacy Guidance',
-      description: 'Comprehensive support for intended parents considering surrogacy, including legal and emotional guidance.',
+      title: 'Assisted Conceptions',
+      description: 'Our assisted conception options include: ',
       features: [
-        'Surrogacy process education',
-        'Legal guidance referrals',
-        'Surrogate matching support',
-        'Relationship counseling',
-        'Ongoing support'
+        'IUI - Intra Uterine Insemination / Artificial Insemination',
+        'IVF - In Vitro Fertilization',
+        'IVF variants(ICSI, IMSI, TESA)',
+        'Egg/Ovum Donor Program',
+        'Surrogacy Program',
+        'Sperm Donation Program'
       ],
       duration: '12-18 months',
       price: 'Custom pricing'
     },
     {
       icon: BookOpen,
-      title: 'Planned Parenthood Counseling',
-      description: 'Family planning guidance for couples looking to optimize their conception timing and health.',
+      title: 'Specialist Referrals',
+      description: 'Do you require help locally in finding the right specialist care or for a second opinion? Look no further! Our network includes world class.',
       features: [
-        'Preconception counseling',
-        'Timing optimization',
-        'Health screening guidance',
-        'Genetic counseling referrals',
-        'Birth spacing advice'
+        'IVF Partner Centres',
+        'Gynecologists & Obstetricians',
+        'Laboratory Services Providers',
+        'Urologists (Male Infertility Management)',
+        'Fibroids Management',
+        'Genetic/ Gender Selection Testing'
       ],
       duration: '1-2 months',
       price: 'From ₦30,000'
     },
     {
-      icon: MessageCircle,
-      title: 'Emotional Support & Counseling',
-      description: 'Individual and couples therapy focused on the emotional aspects of fertility challenges.',
+      icon: Heart,
+      title: 'Natural Conception',
+      description: 'We are aware IVF is not for everyone and not everyone will need IVF. With timely intervention, result-oriented care and attention, some couples go on to conceive naturally.\n' +
+          '\n' +
+          'Our natural fertility and conception program embraces the use of Creighton methods for ovulation charting and monitoring as well as NaproTechnology for advanced treatments and corrective surgeries, augmented with holistic wellness plans.\n' +
+          '\n' +
+          'We help you understand the fertility language your body speaks, and prepare a personalized plan for you, so you can conceive naturally.\n' +
+          '\n' +
+          'You will be required to go through our Camp Napro program where necessary',
       features: [
-        'Individual counseling sessions',
-        'Couples therapy',
-        'Support group facilitation',
-        'Stress management techniques',
-        'Coping strategy development'
+        // 'Fertility health assessment',
+        // 'Lifestyle optimization guidance',
+        // 'Nutritional counseling',
+        // 'Supplement recommendations',
+        // 'Cycle tracking support'
       ],
-      duration: 'Ongoing',
-      price: 'From ₦25,000/session'
-    },
-    {
-      icon: Calendar,
-      title: 'Pregnancy Support',
-      description: 'Continued care and guidance throughout your pregnancy journey after conception.',
-      features: [
-        'Early pregnancy support',
-        'Prenatal counseling',
-        'Birth preparation',
-        'Postpartum planning',
-        'Breastfeeding support'
-      ],
-      duration: '9 months',
-      price: 'From ₦75,000'
+      duration: '2-3 months',
+      price: 'From ₦50,000'
     }
+    // {
+    //   icon: MessageCircle,
+    //   title: 'Emotional Support & Counseling',
+    //   description: 'Individual and couples therapy focused on the emotional aspects of fertility challenges.',
+    //   features: [
+    //     'Individual counseling sessions',
+    //     'Couples therapy',
+    //     'Support group facilitation',
+    //     'Stress management techniques',
+    //     'Coping strategy development'
+    //   ],
+    //   duration: 'Ongoing',
+    //   price: 'From ₦25,000/session'
+    // },
+    // {
+    //   icon: Calendar,
+    //   title: 'Pregnancy Support',
+    //   description: 'Continued care and guidance throughout your pregnancy journey after conception.',
+    //   features: [
+    //     'Early pregnancy support',
+    //     'Prenatal counseling',
+    //     'Birth preparation',
+    //     'Postpartum planning',
+    //     'Breastfeeding support'
+    //   ],
+    //   duration: '9 months',
+    //   price: 'From ₦75,000'
+    // }
   ];
 
   return (
@@ -132,16 +143,16 @@ const ServicesPage = () => {
                   </ul>
                 </div>
                 
-                <div className="flex justify-between items-center mb-6">
-                  <div>
-                    <span className="text-sm font-medium text-gray-500">Duration:</span>
-                    <p className="text-gray-900">{service.duration}</p>
-                  </div>
-                  <div className="text-right">
-                    <span className="text-sm font-medium text-gray-500">Investment:</span>
-                    <p className="text-emerald-600 font-semibold">{service.price}</p>
-                  </div>
-                </div>
+                {/*<div className="flex justify-between items-center mb-6">*/}
+                {/*  <div>*/}
+                {/*    <span className="text-sm font-medium text-gray-500">Duration:</span>*/}
+                {/*    <p className="text-gray-900">{service.duration}</p>*/}
+                {/*  </div>*/}
+                {/*  <div className="text-right">*/}
+                {/*    <span className="text-sm font-medium text-gray-500">Investment:</span>*/}
+                {/*    <p className="text-emerald-600 font-semibold">{service.price}</p>*/}
+                {/*  </div>*/}
+                {/*</div>*/}
                 
                 <Link
                   to="/booking"
