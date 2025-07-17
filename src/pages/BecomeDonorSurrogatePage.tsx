@@ -20,60 +20,47 @@ const BecomeDonorSurrogatePage = () => {
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
-            <h2 className="text-3xl font-bold text-gray-900 mb-8">How You Can Help</h2>
-            
+            <h2 className="text-3xl font-bold text-gray-900 mb-8">So you want to be a Surrogate Mother/Egg Donor/Sperm Donor?</h2>
             <p className="text-gray-700 mb-6 leading-relaxed">
-              By becoming an egg donor or surrogate, you have the opportunity to help families 
-              who are struggling with infertility. Your selfless act can change lives and create 
-              families that might not otherwise exist. We provide comprehensive support and 
-              compensation for your time and commitment.
+              Wow, what an amazing person you are – one of a kind, generous person whose desire is to help another family become parents.
             </p>
-
-            <h3 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">Egg Donation</h3>
             <p className="text-gray-700 mb-6 leading-relaxed">
-              As an egg donor, you can help families who are unable to conceive due to poor egg 
-              quality, advanced maternal age, or genetic concerns. The egg donation process involves 
-              ovarian stimulation and egg retrieval, typically completed in one menstrual cycle. 
-              Our donors receive comprehensive medical care and generous compensation for their time.
+              Either you are signing up to be a Surrogate Mother or a Donor, you will find this experience challenging, demanding, yet rewarding and fulfilling. Our promise to you is to make this worth your while every step of the way.
             </p>
-
-            <h3 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">Surrogacy</h3>
             <p className="text-gray-700 mb-6 leading-relaxed">
-              As a surrogate, you can help families who are unable to carry a pregnancy themselves. 
-              Surrogates carry a pregnancy for intended parents, providing the incredible gift of 
-              helping to bring a child into the world. This journey typically takes 12-18 months 
-              and includes comprehensive medical care and generous compensation.
+              We walk with you from the very first moments you get in touch with us, all the way!
             </p>
-
-            <h3 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">Requirements</h3>
             <p className="text-gray-700 mb-6 leading-relaxed">
-              Our donors and surrogates must meet specific criteria to ensure the health and safety 
-              of all parties involved. Requirements include age restrictions, health screenings, 
-              psychological evaluations, and lifestyle factors. We provide detailed information 
-              about all requirements during the application process.
+              We give you all the education, counseling, and support to make your journey beautiful.
             </p>
-
-            <h3 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">The Application Process</h3>
             <p className="text-gray-700 mb-6 leading-relaxed">
-              The application process begins with an initial consultation to discuss your interest 
-              and answer any questions you may have. This is followed by comprehensive screening 
-              including medical evaluations, genetic testing, and psychological assessments. 
-              Throughout the process, our team provides guidance and support.
+              Our screening process is vigorous, intense and engaging. We want to make sure you are matched with the most suitable family so that all parties are fulfilled.  It is not just about the compensation you will receive in appreciation of your valued time and contribution, it is about giving a lifetime gift to someone who needs it.
             </p>
-
-            <h3 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">Support and Compensation</h3>
+            <h3 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">Steps to becoming a Surrogate / donor</h3>
+            <h4 className="text-xl font-semibold text-gray-900 mb-2 mt-6">Step 1 - Enrollment, Assessment & Selection</h4>
+            <ul className="list-disc pl-6 text-gray-700 mb-6 leading-relaxed">
+              <li>You apply online first, and we screen your application. You will have access to educational materials that will explain the process to you so you know what you are signing up for.</li>
+              <li>We shortlist and invite you for a face to face interview</li>
+              <li>Once you are successful at the interview, you will be wait- listed.</li>
+              <li>You shall advance to our medical and psychological screening stage once we get a request from a likely match. Medical screening shall include screening for infectious and sexually transmitted diseases, fertility profile and other compatibility markers.</li>
+              <li>If you are matched with a family, you shall be contacted and advanced to stage 2</li>
+            </ul>
+            <p className="text-gray-700 mb-6 leading-relaxed font-semibold">Note: only 20% of our candidates make it to this point.</p>
+            <h4 className="text-xl font-semibold text-gray-900 mb-2 mt-6">Step 2 - Documentation & Training</h4>
+            <ul className="list-disc pl-6 text-gray-700 mb-6 leading-relaxed">
+              <li>Once you have been successfully matched with a commissioning couple, you will have to go through the Legal paper work and sign all appropriate contracts.</li>
+              <li>You will also be taken through the process and procedure required of your specific program.</li>
+              <li>Our program coordinator shall ensure you understand the process and what is required by all parties and where possible, shall accompany you to your initial appointments at the Fertility Clinic so you are familiar with the process.</li>
+              <li>Your cycle shall take place usually within 2 months of matching</li>
+            </ul>
+            <h4 className="text-xl font-semibold text-gray-900 mb-2 mt-6">Step 3 - Your Treatment</h4>
+            <ul className="list-disc pl-6 text-gray-700 mb-6 leading-relaxed">
+              <li>If you are an ovum donor your treatment shall, most likely, last for a month. <a href="#" className="text-emerald-600 underline">Click here for more details</a></li>
+              <li>If you are a surrogate mother candidate, please <a href="#" className="text-emerald-600 underline">click here for more details</a>.</li>
+            </ul>
+            <h4 className="text-xl font-semibold text-gray-900 mb-2 mt-6">Step 4 - Your Compensation</h4>
             <p className="text-gray-700 mb-6 leading-relaxed">
-              We believe that donors and surrogates should be well-compensated for their time, 
-              effort, and commitment. Our compensation packages are competitive and include 
-              medical expenses, travel costs, and additional support services. We also provide 
-              ongoing emotional support and counseling throughout the process.
-            </p>
-
-            <h3 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">Making a Difference</h3>
-            <p className="text-gray-700 mb-6 leading-relaxed">
-              By becoming a donor or surrogate, you're not just helping one family - you're 
-              creating a legacy of hope and possibility. Your generosity can inspire others 
-              and contribute to a community of support for families struggling with infertility.
+              Although the gift of a baby is priceless, the compensation you receive at Precious Conceptions is one of the best in the country! This is because we value your time, effort, commitment and contribution towards bringing hope to another family.
             </p>
 
             <div className="bg-emerald-50 p-8 rounded-lg mt-12">

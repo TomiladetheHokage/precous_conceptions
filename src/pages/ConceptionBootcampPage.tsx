@@ -20,61 +20,39 @@ const ConceptionBootcampPage = () => {
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
-            <h2 className="text-3xl font-bold text-gray-900 mb-8">Transform Your Fertility Journey</h2>
-            
+            <h2 className="text-3xl font-bold text-gray-900 mb-8">Trying to get pregnant?</h2>
             <p className="text-gray-700 mb-6 leading-relaxed">
-              Our Conception Bootcamp is a comprehensive program designed to empower couples 
-              with the knowledge, tools, and support they need to optimize their fertility 
-              and increase their chances of successful conception. Whether you're just starting 
-              your journey or have been trying for some time, our bootcamp provides evidence-based 
-              strategies and personalized guidance.
+              Hello my name is Toyin Lolu-Ogunmade, an infertility survivor, a proud mom to a set of twins through gestational surrogacy and the author of the best selling book, MOM At Last, my 13 year journey.
             </p>
-
-            <h3 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">What You'll Learn</h3>
             <p className="text-gray-700 mb-6 leading-relaxed">
-              Our bootcamp covers essential topics including fertility awareness, optimal timing, 
-              nutrition and lifestyle factors, stress management, and medical interventions. 
-              You'll learn from fertility experts, nutritionists, and mental health professionals 
-              who understand the unique challenges of the fertility journey.
+              I am the Founder& CEO, Precious Conceptions, Nigeria’s foremost Holistic Family Building Consultancy, which helps intending parents identify, improve and maximize their conception chances.
             </p>
-
-            <h3 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">Program Structure</h3>
             <p className="text-gray-700 mb-6 leading-relaxed">
-              The bootcamp runs for 12 weeks and includes weekly group sessions, individual 
-              consultations, educational materials, and ongoing support. Each week focuses on 
-              different aspects of fertility optimization, building a comprehensive foundation 
-              for your conception journey.
+              My journey to motherhood took 13 years. I realized, during my infertility struggle, that if I had known what I know now, and had the sort of help available now, I probably wouldn’t have ended up going through IVF Surrogacy.
             </p>
-
-            <h3 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">Expert Guidance</h3>
             <p className="text-gray-700 mb-6 leading-relaxed">
-              Our team of fertility specialists, nutritionists, and mental health professionals 
-              work together to provide you with the most current and effective strategies for 
-              fertility optimization. You'll have access to experts who understand the science 
-              behind conception and can provide personalized recommendations.
+              That’s why I am here… talking with you today.
             </p>
-
-            <h3 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">Community Support</h3>
             <p className="text-gray-700 mb-6 leading-relaxed">
-              One of the most valuable aspects of our bootcamp is the community of support you'll 
-              find. Connect with other couples on similar journeys, share experiences, and build 
-              lasting friendships. The emotional support and understanding from others who truly 
-              understand your situation can be incredibly powerful.
+              Do you know that infertility is an illness, and if caught early, can be reversed, controlled, managed and overcome?
             </p>
-
-            <h3 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">Success Stories</h3>
             <p className="text-gray-700 mb-6 leading-relaxed">
-              Many of our bootcamp participants have gone on to achieve successful pregnancies 
-              and build their families. The knowledge, support, and strategies they gained through 
-              the program have made a significant difference in their fertility journeys. 
-              We're proud to be part of their success stories.
+              Do you realize that with the right help and a bit more push in terms of Holistic approach (wellness, nutrition, exercise, and ovulation monitoring, faith factor) most people can conceive spontaneously especially if they get help early?
             </p>
-
-            <h3 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">Investment in Your Future</h3>
             <p className="text-gray-700 mb-6 leading-relaxed">
-              The Conception Bootcamp is an investment in your fertility and your family's future. 
-              The knowledge and strategies you'll learn can benefit you throughout your entire 
-              fertility journey, whether you conceive naturally or need medical assistance.
+              That is why Precious Conceptions is Partnering with World Class Natural Conception Specialists to create awareness about this. We want you to get pregnant in your bedroom, if this is your advantage. And we can help you with it!!
+            </p>
+            <p className="text-gray-700 mb-6 leading-relaxed">
+              Isn’t that great news?
+            </p>
+            <p className="text-gray-700 mb-6 leading-relaxed">
+              Lets work with you in fast tracking your baby dedication date
+            </p>
+            <p className="text-gray-700 mb-6 leading-relaxed">
+              Kindly register here and we shall give you more information about our conference holding on November 1, 2024 and the upcoming SIX MONTHS CONCEPTION BOOTCAMP PROGRAM tailored exactly for you.
+            </p>
+            <p className="text-gray-700 mb-6 leading-relaxed">
+              Thank you for agreeing to do this. I assure you, it will not be in vain.
             </p>
 
             <div className="bg-emerald-50 p-8 rounded-lg mt-12">

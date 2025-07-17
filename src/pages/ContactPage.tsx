@@ -119,7 +119,7 @@ const ContactPage = () => {
                     </div>
                     <div>
                       <h3 className="font-semibold text-gray-900">Phone</h3>
-                      <p className="text-gray-600">+234 800 000 0000</p>
+                      <p className="text-gray-600">+234 708 808 0339</p>
                       <p className="text-sm text-gray-500">Available Mon-Fri, 9AM-6PM</p>
                     </div>
                   </div>
@@ -130,7 +130,7 @@ const ContactPage = () => {
                     </div>
                     <div>
                       <h3 className="font-semibold text-gray-900">Email</h3>
-                      <p className="text-gray-600">hello@fertilityjourney.ng</p>
+                      <p className="text-gray-600">info@preciousconceptionscom</p>
                       <p className="text-sm text-gray-500">We respond within 24 hours</p>
                     </div>
                   </div>

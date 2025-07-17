@@ -1,8 +1,10 @@
 // import React from 'react';
 import { Heart, Users, Baby, BookOpen, MessageCircle, Calendar } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 
 const ServicesPage = () => {
+  const [showAll, setShowAll] = useState(false);
   const services = [
     {
       icon: Users,
@@ -103,65 +105,77 @@ const ServicesPage = () => {
 
   return (
     <div className="py-16">
-      {/* Hero Section */}
-      <section className="bg-gradient-to-br from-emerald-50 to-blue-50 py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Comprehensive Fertility Services
+      {/* Hero Section - Modernized */}
+      <section className="relative bg-gradient-to-br from-emerald-50 to-blue-50 py-24 flex flex-col items-center justify-center">
+        <div className="absolute inset-0 pointer-events-none">
+          {/* Decorative shape or gradient could go here for extra style */}
+        </div>
+        <div className="relative z-10 flex flex-col items-center">
+          <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4 text-center">
+            Your Fertility Journey, Supported Every Step
           </h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            From natural conception support to advanced reproductive guidance, 
-            we offer personalized services tailored to your unique journey.
+          <p className="text-xl text-gray-700 max-w-2xl text-center mb-6">
+            Compassionate, expert care for every path to parenthood. Explore our holistic services designed to meet you where you are—and help you move forward with hope.
           </p>
         </div>
       </section>
 
-      {/* Services Grid */}
+      {/* Services Grid - Modernized */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            {services.map((service, index) => (
-              <div key={index} className="bg-gray-50 rounded-lg p-8 hover:shadow-lg transition-shadow duration-200">
-                <div className="flex items-center mb-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {(showAll ? services : services.slice(0, 3)).map((service, index) => (
+              <div key={index} className="bg-white rounded-xl shadow-lg p-6 flex flex-col h-full hover:shadow-xl transition-shadow duration-300 border border-emerald-50">
+                <div className="flex items-center mb-4">
                   <div className="inline-flex items-center justify-center w-12 h-12 bg-emerald-100 rounded-lg mr-4">
                     <service.icon className="h-6 w-6 text-emerald-600" />
                   </div>
-                  <h3 className="text-xl font-semibold text-gray-900">{service.title}</h3>
+                  <h3 className="text-lg font-bold text-gray-900">{service.title}</h3>
                 </div>
-                
-                <p className="text-gray-600 mb-6">{service.description}</p>
-                
-                <div className="mb-6">
-                  <h4 className="font-semibold text-gray-900 mb-3">What's Included:</h4>
-                  <ul className="space-y-2">
-                    {service.features.map((feature, featureIndex) => (
-                      <li key={featureIndex} className="flex items-center text-gray-600">
-                        <div className="w-2 h-2 bg-emerald-500 rounded-full mr-3"></div>
-                        {feature}
-                      </li>
-                    ))}
-                  </ul>
+                <p className="text-gray-700 mb-4 text-base">{service.description}</p>
+                {service.features.length > 0 && (
+                  <div className="mb-4">
+                    <h4 className="font-semibold text-gray-900 mb-2 text-sm">What's Included:</h4>
+                    <ul className="space-y-1">
+                      {service.features.map((feature, featureIndex) => (
+                        <li key={featureIndex} className="flex items-center text-gray-700 text-sm">
+                          <span className="inline-block w-4 h-4 mr-2 bg-emerald-100 rounded-full flex items-center justify-center">
+                            <span className="w-1.5 h-1.5 bg-emerald-500 rounded-full"></span>
+                          </span>
+                          {feature}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+                <div className="mt-auto pt-2">
+                  <Link
+                    to="/booking"
+                    className="w-full bg-emerald-600 text-white py-2 rounded-md font-semibold hover:bg-emerald-700 transition-colors duration-200 text-center block text-base shadow"
+                  >
+                    Book Consultation
+                  </Link>
                 </div>
-                
-                {/*<div className="flex justify-between items-center mb-6">*/}
-                {/*  <div>*/}
-                {/*    <span className="text-sm font-medium text-gray-500">Duration:</span>*/}
-                {/*    <p className="text-gray-900">{service.duration}</p>*/}
-                {/*  </div>*/}
-                {/*  <div className="text-right">*/}
-                {/*    <span className="text-sm font-medium text-gray-500">Investment:</span>*/}
-                {/*    <p className="text-emerald-600 font-semibold">{service.price}</p>*/}
-                {/*  </div>*/}
-                {/*</div>*/}
-                
-                <Link
-                  to="/booking"
-                  className="w-full bg-emerald-600 text-white py-3 rounded-md font-medium hover:bg-emerald-700 transition-colors duration-200 text-center block"
-                >
-                  Book Consultation
-                </Link>
               </div>
             ))}
+          </div>
+          <div className="flex justify-center mt-8">
+            {!showAll && services.length > 3 && (
+              <button
+                className="px-6 py-2 bg-emerald-600 text-white rounded-md font-semibold hover:bg-emerald-700 transition-colors duration-200"
+                onClick={() => setShowAll(true)}
+              >
+                View More
+              </button>
+            )}
+            {showAll && services.length > 3 && (
+              <button
+                className="px-6 py-2 bg-emerald-600 text-white rounded-md font-semibold hover:bg-emerald-700 transition-colors duration-200"
+                onClick={() => setShowAll(false)}
+              >
+                View Less
+              </button>
+            )}
           </div>
         </div>
       </section>
